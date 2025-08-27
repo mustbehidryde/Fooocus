@@ -14,7 +14,7 @@ def load_diffusers(model_path, output_vae=True, output_clip=True, embedding_dire
     unet_path = first_file(os.path.join(model_path, "unet"), diffusion_model_names)
     vae_path = first_file(os.path.join(model_path, "vae"), diffusion_model_names)
 
-    text_encoder_model_names = ["model.fp16.safetensors", "juggernautXL_v8Rundiffusion.safetensors", "pytorch_model.fp16.bin", "pytorch_model.bin"]
+    text_encoder_model_names = ["model.fp16.safetensors", "model.safetensors", "pytorch_model.fp16.bin", "pytorch_model.bin"]
     text_encoder1_path = first_file(os.path.join(model_path, "text_encoder"), text_encoder_model_names)
     text_encoder2_path = first_file(os.path.join(model_path, "text_encoder_2"), text_encoder_model_names)
 
